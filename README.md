@@ -1,4 +1,5 @@
 # フラクタル図形 JavaFXサンプル
+![Java CI with Gradle](https://github.com/makotok/fractal-shapes-jfx/workflows/Java%20CI%20with%20Gradle/badge.svg)
 
 JavaFXでフラクタル図形を描画するサンプル実装です。
 
