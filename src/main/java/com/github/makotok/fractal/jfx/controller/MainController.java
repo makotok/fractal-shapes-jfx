@@ -13,7 +13,6 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.canvas.Canvas;
-import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.ListView;
 import javafx.scene.paint.Color;
 
@@ -66,7 +65,7 @@ public class MainController implements Initializable {
      */
     private void drawCanvas(ShapeItem shapeItem) {
         // 背景色、枠線を描画
-        final GraphicsContext gc = canvas.getGraphicsContext2D();
+        final var gc = canvas.getGraphicsContext2D();
         gc.clearRect(0, 0, canvas.getWidth(), canvas.getHeight());
         gc.setFill(Color.WHITE);
         gc.fillRect(0, 0, canvas.getWidth(), canvas.getHeight());
