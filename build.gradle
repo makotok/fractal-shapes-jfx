@@ -20,6 +20,13 @@ javafx {
     modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.graphics' ]
 }
 
+// デフォルトタスクの指定
+defaultTasks 'clean', 'build'
+
+// グループID、バージョン指定
+group = 'com.github.makotok.fractal'
+version = '1.0.0-SNAPSHOT'
+
 // Javaバージョンの指定
 sourceCompatibility = javaVersion
 targetCompatibility = javaVersion
@@ -28,4 +35,6 @@ targetCompatibility = javaVersion
 compileJava.options.encoding = 'UTF-8'
 compileTestJava.options.encoding = 'UTF-8'
 
+// Mainクラスの指定
 mainClassName = 'com.github.makotok.fractal.jfx.Main'
+
